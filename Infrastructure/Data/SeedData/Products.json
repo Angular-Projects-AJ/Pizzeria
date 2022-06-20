@@ -1,0 +1,182 @@
+[
+  {
+    "Name": "Buffalo Chicken",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Buffalo-Chicken.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Cali Chicken Bacon Ranch",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Cali-Chicken-Bacon-Ranch.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Classic Pepperoni",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Classic-Pepperoni.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Deluxe",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Deluxe.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Extravaganzza",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Extravaganzza.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Honolulu Hawaiian",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Honolulu-Hawaiian.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Meatzza",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Meatzza.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Memphis BBQ Chicken",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Memphis-BBQ-Chicken.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Pacific Veggie",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Pacific-Veggie.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Philly Cheese Steak",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Philly-Cheese-Steak.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Spinach & Feta",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Spinach-&-Feta.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Ultimate Pepperoni",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Ultimate-Pepperoni.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Wisconsin 6 Cheese",
+    "Description": "Delicious Pizza",
+    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Wisconsin-6-Cheese.jpeg",
+    "Price": 19,
+    "Cost": 3,
+    "PreWageEarning": 16,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Baked Apple Dip & Cinnamon Bread Twists",
+    "Description": "Best Dessert",
+    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Baked-Apple-Dip-&-Cinnamon-Bread-Twists.jpeg",
+    "Price": 16,
+    "Cost": 3,
+    "PreWageEarning": 13,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Chocolate Lava Crunch Cakes",
+    "Description": "Best Dessert",
+    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Chocolate-Lava-Crunch-Cakes.jpeg",
+    "Price": 16,
+    "Cost": 3,
+    "PreWageEarning": 13,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Cinnamon Bread Twists",
+    "Description": "Best Dessert",
+    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Cinnamon-Bread-Twists.jpeg",
+    "Price": 16,
+    "Cost": 3,
+    "PreWageEarning": 13,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Marbled Cookie Brownie",
+    "Description": "Best Dessert",
+    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Marbled-Cookie-Brownie.jpeg",
+    "Price": 16,
+    "Cost": 3,
+    "PreWageEarning": 13,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Coke",
+    "Description": "Coke",
+    "PictureUrl": "Infrastructure/Data/SeedData/Drinks/Coke.jpeg",
+    "Price": 8,
+    "Cost": 1,
+    "PreWageEarning": 7,
+    "ProductTypeId": 3
+  },
+  {
+    "Name": "Diet Coke",
+    "Description": "Diet Coke",
+    "PictureUrl": "Infrastructure/Data/SeedData/Drinks/Diet-Coke.jpeg",
+    "Price": 8,
+    "Cost": 1,
+    "PreWageEarning": 7,
+    "ProductTypeId": 3
+  },
+  {
+    "Name": "Lemonade Bottle",
+    "Description": "Lemonade Bottle",
+    "PictureUrl": "Infrastructure/Data/SeedData/Drinks/Lemonade-Bottle.jpeg",
+    "Price": 6,
+    "Cost": 1,
+    "PreWageEarning": 5,
+    "ProductTypeId": 3
+  }
+]

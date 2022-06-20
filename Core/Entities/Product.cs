@@ -19,7 +19,6 @@ namespace Core.Entities
 
         public long PreWageEarning { get; set; }
 
-//
         public ProductType ProductType { get; set; }
 
         public int ProductTypeId { get; set; }
