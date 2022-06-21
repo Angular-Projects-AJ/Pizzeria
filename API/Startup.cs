@@ -45,6 +45,8 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            //configure in the line below static files, for you it is the product images.
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

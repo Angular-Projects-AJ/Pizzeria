@@ -32,7 +32,7 @@ namespace Infrastructure.Data.Migrations
                     PictureUrl = table.Column<string>(type: "TEXT", nullable: false),
                     Price = table.Column<long>(type: "decimal(18,2)", nullable: false),
                     Cost = table.Column<long>(type: "decimal(18,2)", nullable: false),
-                    PreWageEarning = table.Column<long>(type: "INTEGER", nullable: false),
+                    PreWageEarning = table.Column<long>(type: "decimal(18,2)", nullable: false),
                     ProductTypeId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

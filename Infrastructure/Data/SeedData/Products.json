@@ -2,7 +2,8 @@
   {
     "Name": "Buffalo Chicken",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Buffalo-Chicken.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Buffalo-Chicken.jpeg",
+   
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -11,7 +12,8 @@
   {
     "Name": "Cali Chicken Bacon Ranch",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Cali-Chicken-Bacon-Ranch.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Cali-Chicken-Bacon-Ranch.jpeg",
+    
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -20,7 +22,7 @@
   {
     "Name": "Classic Pepperoni",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Classic-Pepperoni.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Classic-Pepperoni.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -29,7 +31,7 @@
   {
     "Name": "Deluxe",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Deluxe.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Deluxe.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -38,7 +40,7 @@
   {
     "Name": "Extravaganzza",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Extravaganzza.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Extravaganzza.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -47,7 +49,7 @@
   {
     "Name": "Honolulu Hawaiian",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Honolulu-Hawaiian.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Honolulu-Hawaiian.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -56,7 +58,7 @@
   {
     "Name": "Meatzza",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Meatzza.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Meatzza.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -65,7 +67,7 @@
   {
     "Name": "Memphis BBQ Chicken",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Memphis-BBQ-Chicken.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Memphis-BBQ-Chicken.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -74,7 +76,7 @@
   {
     "Name": "Pacific Veggie",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Pacific-Veggie.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Pacific-Veggie.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -83,7 +85,7 @@
   {
     "Name": "Philly Cheese Steak",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Philly-Cheese-Steak.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Philly-Cheese-Steak.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -92,7 +94,7 @@
   {
     "Name": "Spinach & Feta",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Spinach-&-Feta.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Spinach-&-Feta.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -101,7 +103,7 @@
   {
     "Name": "Ultimate Pepperoni",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Ultimate-Pepperoni.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Ultimate-Pepperoni.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -110,7 +112,7 @@
   {
     "Name": "Wisconsin 6 Cheese",
     "Description": "Delicious Pizza",
-    "PictureUrl": "Infrastructure/Data/SeedData/Pizzas/Wisconsin-6-Cheese.jpeg",
+    "PictureUrl": "/images/products/Pizzas/Wisconsin-6-Cheese.jpeg",
     "Price": 19,
     "Cost": 3,
     "PreWageEarning": 16,
@@ -119,7 +121,7 @@
   {
     "Name": "Baked Apple Dip & Cinnamon Bread Twists",
     "Description": "Best Dessert",
-    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Baked-Apple-Dip-&-Cinnamon-Bread-Twists.jpeg",
+    "PictureUrl": "/images/products/Desserts/Baked-Apple-Dip-&-Cinnamon-Bread-Twists.jpeg",
     "Price": 16,
     "Cost": 3,
     "PreWageEarning": 13,
@@ -128,7 +130,7 @@
   {
     "Name": "Chocolate Lava Crunch Cakes",
     "Description": "Best Dessert",
-    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Chocolate-Lava-Crunch-Cakes.jpeg",
+    "PictureUrl": "/images/products/Desserts/Chocolate-Lava-Crunch-Cakes.jpeg",
     "Price": 16,
     "Cost": 3,
     "PreWageEarning": 13,
@@ -137,7 +139,7 @@
   {
     "Name": "Cinnamon Bread Twists",
     "Description": "Best Dessert",
-    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Cinnamon-Bread-Twists.jpeg",
+    "PictureUrl": "/images/products/Desserts/Cinnamon-Bread-Twists.jpeg",
     "Price": 16,
     "Cost": 3,
     "PreWageEarning": 13,
@@ -146,7 +148,7 @@
   {
     "Name": "Marbled Cookie Brownie",
     "Description": "Best Dessert",
-    "PictureUrl": "Infrastructure/Data/SeedData/Desserts/Marbled-Cookie-Brownie.jpeg",
+    "PictureUrl": "/images/products/Desserts/Marbled-Cookie-Brownie.jpeg",
     "Price": 16,
     "Cost": 3,
     "PreWageEarning": 13,
@@ -155,7 +157,8 @@
   {
     "Name": "Coke",
     "Description": "Coke",
-    "PictureUrl": "Infrastructure/Data/SeedData/Drinks/Coke.jpeg",
+    "PictureUrl": "/images/products/Drinks/Coke.jpeg",
+    
     "Price": 8,
     "Cost": 1,
     "PreWageEarning": 7,
@@ -164,7 +167,7 @@
   {
     "Name": "Diet Coke",
     "Description": "Diet Coke",
-    "PictureUrl": "Infrastructure/Data/SeedData/Drinks/Diet-Coke.jpeg",
+    "PictureUrl": "/images/products/Drinks/Diet-Coke.jpeg",
     "Price": 8,
     "Cost": 1,
     "PreWageEarning": 7,
@@ -173,7 +176,7 @@
   {
     "Name": "Lemonade Bottle",
     "Description": "Lemonade Bottle",
-    "PictureUrl": "Infrastructure/Data/SeedData/Drinks/Lemonade-Bottle.jpeg",
+    "PictureUrl": "/images/products/Drinks/Lemonade-Bottle.jpeg",
     "Price": 6,
     "Cost": 1,
     "PreWageEarning": 5,

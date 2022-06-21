@@ -39,7 +39,7 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<long>("PreWageEarning")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<long>("Price")
                         .HasColumnType("decimal(18,2)");
