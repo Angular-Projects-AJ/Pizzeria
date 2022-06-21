@@ -1,3 +1,4 @@
+using API.Dtos;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
@@ -23,21 +24,38 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts() //returning an http response status
+        public async Task<ActionResult<List<ProductToReturnDto>>> GetProducts() //returning an http response status
         {
             var spec = new ProductsWithTypesSpecification();
 
             var products = await _productsRepo.ListAsync(spec); //using async linqish method
 
-            return Ok(products);
+            return products.Select(product => new ProductToReturnDto{
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                PictureUrl = product.PictureUrl,
+                Price = product.Price,
+                ProductType = product.ProductType.Name,
+            }).ToList();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
         {
             var spec = new ProductsWithTypesSpecification(id);
 
-            return await _productsRepo.GetEntityWithSpec(spec); //retrieving the specific product with its id.
+            var product = await _productsRepo.GetEntityWithSpec(spec); //retrieving the specific product with its id.
+
+            return new ProductToReturnDto
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                PictureUrl = product.PictureUrl,
+                Price = product.Price,
+                ProductType = product.ProductType.Name,
+            };
         }
 
         [HttpGet("types")]
