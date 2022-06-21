@@ -9,9 +9,27 @@ namespace Core.Specifications
 {
     public class ProductsWithTypesSpecification : BaseSpecification<Product>
     {
-        public ProductsWithTypesSpecification()
+        public ProductsWithTypesSpecification(string sort)
         {
             AddInclude(x => x.ProductType);
+            AddOrderBy(x => x.Name); //
+
+            if(!string.IsNullOrEmpty(sort))
+            {
+                switch(sort)
+                {
+                    case "pricesAsc":
+                        AddOrderBy(p => p.Price);
+                        break;
+                    case "priceDesc":
+                        AddOrderByDescendin(p => p.Price);
+                        break;
+                    default:
+                        AddOrderBy(n => n.Name);
+                        break;
+                }
+            }
+
         }
 
         public ProductsWithTypesSpecification(int id) 

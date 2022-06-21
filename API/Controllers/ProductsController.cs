@@ -28,9 +28,9 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts() //returning an http response status
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort) //returning an http response status
         {
-            var spec = new ProductsWithTypesSpecification();
+            var spec = new ProductsWithTypesSpecification(sort);
 
             var products = await _productsRepo.ListAsync(spec); //using async linqish method
 
