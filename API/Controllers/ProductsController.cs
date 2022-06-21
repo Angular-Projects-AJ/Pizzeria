@@ -41,6 +41,7 @@ namespace API.Controllers
                 Description = product.Description,
                 PictureUrl = product.PictureUrl,
                 Price = product.Price,
+                Cost = product.Cost,
                 ProductType = product.ProductType.Name,
             }).ToList();
         }
