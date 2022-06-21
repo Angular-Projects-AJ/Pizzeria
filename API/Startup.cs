@@ -1,14 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore.Design;
 using Infrastructure.Data;
-using Core.Interfaces;
 using API.Helpers;
 using API.Middleware;
-using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using API.Errors;
 using API.Extensions;
 
 namespace API
@@ -54,7 +48,7 @@ namespace API
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
-            
+
             app.UseRouting();
             //configure static files in the line below for product images.
             app.UseStaticFiles();
