@@ -1,5 +1,6 @@
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifications;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,17 +12,22 @@ namespace API.Controllers
 
     public class ProductsController : ControllerBase
     {
+        private readonly IGenericRepository<Product> _productsRepo;
+        public readonly IGenericRepository<ProductType> _productTypeRepo;
     
-        private readonly IProductRepository _repo;
-        public ProductsController(IProductRepository repo)
+        public ProductsController(IGenericRepository<Product> productsRepo, IGenericRepository<ProductType> productTypeRepo)
         {
-            _repo = repo;
+            _productTypeRepo = productTypeRepo;
+            _productsRepo = productsRepo;
+           
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts() //returning an http response status
         {
-            var products = await _repo.GetProductsAsync(); //using async linqish method
+            var spec = new ProductsWithTypesSpecification();
+
+            var products = await _productsRepo.ListAsync(spec); //using async linqish method
 
             return Ok(products);
         }
@@ -29,12 +35,14 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            return await _repo.GetProductByIdAsync(id); //retrieving the specific product with its id.
+            var spec = new ProductsWithTypesSpecification(id);
+
+            return await _productsRepo.GetEntityWithSpec(spec); //retrieving the specific product with its id.
         }
 
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes(){
-            return Ok(await _repo.GetProductTypeAsync());
+            return Ok(await _productTypeRepo.ListAllAsync());
         }
     }
 
