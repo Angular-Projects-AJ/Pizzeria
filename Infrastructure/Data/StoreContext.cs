@@ -3,7 +3,6 @@ using System.Reflection;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace Infrastructure.Data
 {
     public class StoreContext : DbContext
@@ -22,6 +21,7 @@ namespace Infrastructure.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
+//attempting to fix sqlite incompatibility with decimal
             if(Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
             {
                 foreach(var entityType in modelBuilder.Model.GetEntityTypes())

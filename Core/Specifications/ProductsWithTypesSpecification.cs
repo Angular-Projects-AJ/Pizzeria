@@ -18,7 +18,7 @@ namespace Core.Specifications
             {
                 switch(sort)
                 {
-                    case "pricesAsc":
+                    case "priceAsc":
                         AddOrderBy(p => p.Price);
                         break;
                     case "priceDesc":
