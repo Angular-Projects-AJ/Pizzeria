@@ -29,21 +29,14 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<ProductToReturnDto>>> GetProducts() //returning an http response status
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts() //returning an http response status
         {
             var spec = new ProductsWithTypesSpecification();
 
             var products = await _productsRepo.ListAsync(spec); //using async linqish method
 
-            return products.Select(product => new ProductToReturnDto{
-                Id = product.Id,
-                Name = product.Name,
-                Description = product.Description,
-                PictureUrl = product.PictureUrl,
-                Price = product.Price,
-                Cost = product.Cost,
-                ProductType = product.ProductType.Name,
-            }).ToList();
+            return Ok(_mapper
+                .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products)); //first mapping the IReadOnly List of Products to IReadOnly List of ProductToReturnDto AUTOMATYCALLY, then returning the dto
         }
 
         [HttpGet("{id}")]
