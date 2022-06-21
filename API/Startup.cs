@@ -30,14 +30,12 @@ namespace API
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });
-            });
+
 
             services.AddDbContext<StoreContext> (x => x.UseSqlite(_config.GetConnectionString("DefaultConnection"))); //setting up the generation of the database
 
             services.AddApplicationServices(); // product of refactoring
+            services.AddSwaggerDocumentation(); // product of refactoring
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,9 +43,7 @@ namespace API
         {
             app.UseMiddleware<ExceptionMiddleware>();
             
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
-            
+            app.UseSwaggerDocumentation();
             // if (env.IsDevelopment())
             // {
             //     // app.UseDeveloperExceptionPage();
@@ -58,9 +54,9 @@ namespace API
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
-            //configure in the line below static files, for you it is the product images.
+            //configure static files in the line below for product images.
             app.UseStaticFiles();
 
             app.UseAuthorization();
