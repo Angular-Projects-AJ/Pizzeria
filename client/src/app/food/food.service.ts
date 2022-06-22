@@ -17,15 +17,14 @@ export class FoodService {
   getProducts(foodParams: FoodParams) {
     let params = new HttpParams();
 
-    if(foodParams.typeId)
+    if(foodParams.typeId !== 0)
     {
       params = params.append('typeId', foodParams.typeId.toString());
     }
-
-    if(foodParams.sort)
-    {
-      params = params.append('sort', foodParams.sort);
-    }
+//finishing the paging.
+    params = params.append('sort', foodParams.sort);
+    params = params.append('pageIndex', foodParams.pageNumber.toString());
+    params = params.append('pageIndex', foodParams.pageSize.toString());
 
     return this.http.get<IPagination>(this.baseUrl + 'products', {observe: 'response', params})
       .pipe(

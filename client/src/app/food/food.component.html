@@ -42,7 +42,9 @@
             <div class="d-flex justify-content-center">
                 <pagination 
                     [boundaryLinks]="true" 
-                    [totalItems]="this.totalCount" 
+                    [totalItems]="this.totalCount"
+                    (pageChanged)="onPageChanged($event)"
+                    [itemsPerPage]="this.foodParams.pageSize"
                     previousText="&lsaquo;" 
                     nextText="&rsaquo;"
                     firstText="&laquo;" 

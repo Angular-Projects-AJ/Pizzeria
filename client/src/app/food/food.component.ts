@@ -57,4 +57,9 @@ export class FoodComponent implements OnInit {
     this.foodParams.sort = sort;
     this.getProducts();
   }
+
+  onPageChanged(event: any) {
+    this.foodParams.pageNumber = event.page;
+    this.getProducts();
+  }
 }
