@@ -50,6 +50,7 @@ export class FoodComponent implements OnInit {
 
   onTypeSelected(typeId: number){
     this.foodParams.typeId = typeId;
+    this.foodParams.pageNumber = 1;
     this.getProducts();
   }
 
@@ -60,12 +61,16 @@ export class FoodComponent implements OnInit {
   }
 
   onPageChanged(event: any) {
-    this.foodParams.pageNumber = event;
-    this.getProducts();
+    if(this.foodParams.pageNumber !== event)
+    {
+      this.foodParams.pageNumber = event;
+      this.getProducts();
+    }
   }
 
   onSearch() {
     this.foodParams.search = this.searchTerm.nativeElement.value;
+    this.foodParams.pageNumber = 1;
     this.getProducts();
   }
 

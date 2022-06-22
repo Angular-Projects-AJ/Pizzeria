@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-
+//add code for the apearing and dissapearing of My-Pizza <a>
   constructor() { }
 
   ngOnInit(): void {
