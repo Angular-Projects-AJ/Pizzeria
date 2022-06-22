@@ -9,12 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
 
   title = 'Pizzeria';
+  products: any[];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://localhost:5001/api/products').subscribe((response: any) => {
-      console.log(response);
+    this.http.get('https://localhost:5001/api/products?pageSize=50').subscribe((response: any) => {
+      this.products = response.data;
     }, error => {
       console.log(error);
     });
