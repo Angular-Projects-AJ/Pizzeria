@@ -21,6 +21,12 @@ export class FoodService {
     {
       params = params.append('typeId', foodParams.typeId.toString());
     }
+
+    if(foodParams.search)
+    {
+      params = params.append('search', foodParams.search);
+    }
+    
 //finishing the paging.
     params = params.append('sort', foodParams.sort);
     params = params.append('pageIndex', foodParams.pageNumber.toString());

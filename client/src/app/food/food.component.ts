@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FoodParams } from '../shared/models/foodParams';
 import { IProduct } from '../shared/models/product';
 import { IType } from '../shared/models/productTypes';
@@ -10,6 +10,7 @@ import { FoodService } from './food.service';
   styleUrls: ['./food.component.scss']
 })
 export class FoodComponent implements OnInit {
+  @ViewChild('search', {static: true}) searchTerm: ElementRef;
   products: IProduct[];
   types: IType[];
   foodParams = new FoodParams();
@@ -60,6 +61,18 @@ export class FoodComponent implements OnInit {
 
   onPageChanged(event: any) {
     this.foodParams.pageNumber = event;
+    this.getProducts();
+  }
+
+  onSearch() {
+    this.foodParams.search = this.searchTerm.nativeElement.value;
+    this.getProducts();
+  }
+
+  onReset()
+  {
+    this.searchTerm.nativeElement.value = '';
+    this.foodParams = new FoodParams();
     this.getProducts();
   }
 }
