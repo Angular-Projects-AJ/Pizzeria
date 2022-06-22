@@ -30,6 +30,14 @@ namespace API
 
             services.AddApplicationServices(); // product of refactoring
             services.AddSwaggerDocumentation(); // product of refactoring
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                    // if is running on an insecure port do not return a header that can be executed by the browser
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +60,8 @@ namespace API
             app.UseRouting();
             //configure static files in the line below for product images.
             app.UseStaticFiles();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
