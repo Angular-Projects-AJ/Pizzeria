@@ -10,6 +10,7 @@ import { MyPizzaComponent } from './my-pizza.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [MyPizzaComponent]
 })
 export class MyPizzaModule { }

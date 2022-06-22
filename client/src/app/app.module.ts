@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { FoodModule } from './food/food.module';
+import { HomeModule } from './home/home.module';
+import { ManagerLogInModule } from './manager-log-in/manager-log-in.module';
+import { MyPizzaModule } from './my-pizza/my-pizza.module';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { FoodModule } from './food/food.module';
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    FoodModule
+    FoodModule,
+    HomeModule,
+    ManagerLogInModule,
+    MyPizzaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

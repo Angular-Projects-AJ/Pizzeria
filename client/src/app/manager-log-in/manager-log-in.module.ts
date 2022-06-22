@@ -10,6 +10,7 @@ import { ManagerLogInComponent } from './manager-log-in.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ManagerLogInComponent]
 })
 export class ManagerLogInModule { }
