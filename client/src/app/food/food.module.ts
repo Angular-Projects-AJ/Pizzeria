@@ -10,6 +10,7 @@ import { FoodComponent } from './food.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [FoodComponent]
 })
 export class FoodModule { }
