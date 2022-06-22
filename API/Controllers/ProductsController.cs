@@ -1,5 +1,6 @@
 using API.Dtos;
 using API.Errors;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -28,16 +29,23 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(
-            string sort, int? typeId)
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
+            [FromQuery] ProductSpecParams productParams)
         {
-            var spec = new ProductsWithTypesSpecification(sort, typeId);
+            var spec = new ProductsWithTypesSpecification(productParams);
+
+            var countSpec = new ProductWithFiltersForCountSpecification(productParams);
+
+            var totalItems = await _productsRepo.CountAsync(countSpec);
 
             var products = await _productsRepo.ListAsync(spec); //using async linqish method
 
-            return Ok(_mapper
-                .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products)); //first mapping the IReadOnly List of Products to IReadOnly List of ProductToReturnDto AUTOMATYCALLY, then returning the dto
+            var data = _mapper
+                .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);//first mapping the IReadOnly List of Products to IReadOnly List of ProductToReturnDto AUTOMATYCALLY, then returning the dto
+
+            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, productParams.PageSize, totalItems, data));
         }
+
 
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
