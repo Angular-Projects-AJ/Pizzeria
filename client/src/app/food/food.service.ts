@@ -1,7 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IPagination } from '../shared/models/pagination';
 import { IType } from '../shared/models/productTypes';
+import {map} from 'rxjs/operators';
+import { FoodParams } from '../shared/models/foodParams';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +14,25 @@ export class FoodService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts() {
-    return this.http.get<IPagination>(this.baseUrl + 'products?pageSize=30');
+  getProducts(foodParams: FoodParams) {
+    let params = new HttpParams();
+
+    if(foodParams.typeId)
+    {
+      params = params.append('typeId', foodParams.typeId.toString());
+    }
+
+    if(foodParams.sort)
+    {
+      params = params.append('sort', foodParams.sort);
+    }
+
+    return this.http.get<IPagination>(this.baseUrl + 'products', {observe: 'response', params})
+      .pipe(
+        map(response =>{
+          return response.body;
+        })
+      );
   }
 
   getTypes() {
