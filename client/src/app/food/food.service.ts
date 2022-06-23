@@ -4,6 +4,7 @@ import { IPagination } from '../shared/models/pagination';
 import { IType } from '../shared/models/productTypes';
 import {map} from 'rxjs/operators';
 import { FoodParams } from '../shared/models/foodParams';
+import { IProduct } from '../shared/models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,7 @@ export class FoodService {
       params = params.append('search', foodParams.search);
     }
     
-//finishing the paging.
+  //finishing the paging.
     params = params.append('sort', foodParams.sort);
     params = params.append('pageIndex', foodParams.pageNumber.toString());
     params = params.append('pageIndex', foodParams.pageSize.toString());
@@ -38,6 +39,11 @@ export class FoodService {
           return response.body;
         })
       );
+  }
+
+  getProduct(id: number)
+  {
+    return this.http.get<IProduct>(this.baseUrl + 'products/' + id);
   }
 
   getTypes() {
