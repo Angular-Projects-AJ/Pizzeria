@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "ztdfTMXc44EhvgqhsoHBv/wfhpsxIaJg1G86fsmcvUSTPBT7oL25BTK/bdSEA08+yiEM1/01WEsp68OtkHzt4g==",
+  "dgSpecHash": "WsYLNyxSNj5l0qPU9BMvG8T7cTgOVeo28EXnxqN8QFDccwHmNE7f58QgbPJQorfhtAa4YKktU+OGdg4oQLWH5g==",
   "success": true,
   "projectFilePath": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/zeusj/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/pipelines.sockets.unofficial/2.2.2/pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/stackexchange.redis/2.6.45/stackexchange.redis.2.6.45.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.diagnostics.performancecounter/5.0.0/system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.drawing.common/5.0.0/system.drawing.common.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.security.cryptography.protecteddata/5.0.0/system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.security.permissions/5.0.0/system.security.permissions.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/Users/zeusj/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
