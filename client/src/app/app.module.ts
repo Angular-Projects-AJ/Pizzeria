@@ -15,7 +15,6 @@ import { MyPizzaModule } from './my-pizza/my-pizza.module';
 @NgModule({
   declarations: [
     AppComponent,
-
   ], 
   imports: [
     BrowserModule,

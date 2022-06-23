@@ -8,9 +8,8 @@ import { MyPizzaComponent } from './my-pizza/my-pizza.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: '', component: ManagerLogInComponent},
-  {path: '', component: MyPizzaComponent},
-  
+  {path: 'manager-log-in', component: ManagerLogInComponent},
+  {path: 'my-pizza', component: MyPizzaComponent},
   {path: 'food', component: FoodComponent},
   {path: 'food/:id', component: ProductDetailsComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}

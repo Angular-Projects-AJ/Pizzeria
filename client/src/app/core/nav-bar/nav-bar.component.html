@@ -1,13 +1,13 @@
 <div class="d-flex flex-column flex-md-row align-items-center justify-content-between 
 p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
-    <img src="/assets/images/logo.jpg" style="max-height: 70px;" alt="logo">
+    <img src="/assets/images/logo.jpg" style="max-height: 70px;" alt="logo" routerLink="/">
     <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: larger">
 
     
-      <a class="p-2 text-dark" href="#">Home</a>
-      <a class="p-2 text-dark" href="#">Food</a>
-      <a class="p-2 text-dark" href="#">My Pizza</a>
-      <a class="p-2 text-dark" href="#">Manager log in</a>
+      <a class="p-2 text-dark" [routerLink]="['/']">Home</a>
+      <a class="p-2 text-dark" routerLink="/food">Food</a>
+      <a class="p-2 text-dark" routerLink="/my-pizza">My Pizza</a>
+      <a class="p-2 text-dark" routerLink="/manager-log-in">Manager log in</a>
     </nav>
 
     <div class="d-flex align-items-center">
