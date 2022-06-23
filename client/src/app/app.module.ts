@@ -22,7 +22,7 @@ import { MyPizzaModule } from './my-pizza/my-pizza.module';
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    FoodModule,
+    // FoodModule,
     HomeModule,
     ManagerLogInModule,
     MyPizzaModule
