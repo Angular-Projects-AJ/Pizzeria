@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BasketService } from 'src/app/basket/basket.service';
 import { IProduct } from 'src/app/shared/models/product';
 import { FoodService } from '../food.service';
 
@@ -11,12 +12,30 @@ import { FoodService } from '../food.service';
 export class ProductDetailsComponent implements OnInit {
 
   product: IProduct;
+  quantity = 1;
 
-  constructor(private foodService: FoodService, private activatedRoute: ActivatedRoute) { }
+  constructor(
+    private foodService: FoodService, 
+    private activatedRoute: ActivatedRoute, 
+    private basketService: BasketService) { }
 
   ngOnInit(): void {
     this.loadProduct();
   }
+
+  addItemToBasket() {
+    this.basketService.addItemToBasket(this.product, this.quantity);
+  }
+
+  incrementQuantity() {
+    this.quantity++;
+  }
+  
+  decrementQuantity() {
+    this.quantity--;
+  }
+
+
 
   loadProduct() {
     this.foodService.getProduct(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe(product => {

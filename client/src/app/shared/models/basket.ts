@@ -7,6 +7,7 @@ export interface IBasketItem {
     quantity: number;
     pictureUrl: string;
     type: string;
+    pizzaSize: string;
 }
 
 export interface IBasket {
