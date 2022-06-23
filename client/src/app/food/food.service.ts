@@ -5,13 +5,14 @@ import { IType } from '../shared/models/productTypes';
 import {map} from 'rxjs/operators';
 import { FoodParams } from '../shared/models/foodParams';
 import { IProduct } from '../shared/models/product';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
-  baseUrl = 'https://localhost:5001/api/';
+  baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

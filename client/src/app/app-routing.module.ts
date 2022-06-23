@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'manager-log-in', component: ManagerLogInComponent},
   {path: 'my-pizza', component: MyPizzaComponent},
   {path: 'food', loadChildren: () => import('./food/food.module').then(mod => mod.FoodModule)},
+  {path: 'basket', loadChildren: () => import('./basket/basket.module').then(mod => mod.BasketModule)},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
