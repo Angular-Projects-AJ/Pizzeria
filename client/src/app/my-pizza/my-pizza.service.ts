@@ -52,6 +52,7 @@ export class MyPizzaService {
       customerAddress: item.customerAddress,
       customerAddressZipCode: item.customerAddressZipCode,
       promisedDeliveryTime: item.promisedDeliveryTime,
+      pizzasSize: item.pizzasSize,
       initialDeliveryTime: item.initialDeliveryTime,
       finalDeliveryTime: item.finalDeliveryTime,
       errorInDeliveryTime: item.errorInDeliveryTime,

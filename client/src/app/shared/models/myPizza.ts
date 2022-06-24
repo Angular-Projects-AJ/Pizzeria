@@ -10,6 +10,7 @@ export interface IMyPizzaItem {
     customerAddress: string,
     customerAddressZipCode: number,
     promisedDeliveryTime: number,
+    pizzasSize: string,
     initialDeliveryTime: number,
     finalDeliveryTime: number,
     errorInDeliveryTime: number,
