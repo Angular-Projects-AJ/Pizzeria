@@ -10,3 +10,15 @@
 /Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/obj/Debug/net6.0/refint/Core.dll
 /Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/obj/Debug/net6.0/Core.pdb
 /Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/obj/Debug/net6.0/ref/Core.dll
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/bin/Debug/net6.0/Core.deps.json
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/bin/Debug/net6.0/Core.dll
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/bin/Debug/net6.0/Core.pdb
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.csproj.AssemblyReference.cache
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.AssemblyInfoInputs.cache
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.AssemblyInfo.cs
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.csproj.CoreCompileInputs.cache
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.dll
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/refint/Core.dll
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/Core.pdb
+/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/Debug/net6.0/ref/Core.dll

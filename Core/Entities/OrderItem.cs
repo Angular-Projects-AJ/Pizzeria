@@ -7,6 +7,10 @@ namespace Core.Entities
 {
     public class OrderItem
     {
+        public OrderItem()
+        {
+        }
+
         public int Id { get; set; }
         public string EmployeeName { get; set; }
         public string CustomerFirstName { get; set; }

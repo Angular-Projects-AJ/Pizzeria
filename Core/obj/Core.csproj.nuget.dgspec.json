@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/Core.csproj": {}
+    "/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/Core.csproj": {}
   },
   "projects": {
-    "/Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/Core.csproj": {
+    "/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/Core.csproj",
+        "projectUniqueName": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/Core.csproj",
+        "projectPath": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/Core.csproj",
         "packagesPath": "/Users/zeusj/.nuget/packages/",
-        "outputPath": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fourth_iteration_pizzeria/Core/obj/",
+        "outputPath": "/Users/zeusj/Desktop/Pizzaria_api_iterations/fith_iteration_pizzeria/Pizzeria/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zeusj/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.45, )"
