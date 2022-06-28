@@ -41,7 +41,7 @@ namespace API
 
 
             services.AddApplicationServices(); // product of refactoring
-            services.AddIdentityServices();
+            services.AddIdentityServices(_config);
             services.AddSwaggerDocumentation(); // product of refactoring
             services.AddCors(opt =>
             {
@@ -75,6 +75,8 @@ namespace API
             app.UseStaticFiles();
 
             app.UseCors("CorsPolicy");
+
+            app.UseAuthentication(); //authoenticate before you authorize.
 
             app.UseAuthorization();
 
