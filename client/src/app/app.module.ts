@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,7 @@ import { FoodModule } from './food/food.module';
 import { HomeModule } from './home/home.module';
 import { ManagerLogInModule } from './manager-log-in/manager-log-in.module';
 import { MyPizzaModule } from './my-pizza/my-pizza.module';
+import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { MyPizzaModule } from './my-pizza/my-pizza.module';
     ManagerLogInModule,
     MyPizzaModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
