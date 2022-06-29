@@ -20,6 +20,7 @@ const routes: Routes = [
   {path: 'my-pizza', loadChildren: () => import('./my-pizza/my-pizza.module').then(mod => mod.MyPizzaModule)},
   {path: 'food', loadChildren: () => import('./food/food.module').then(mod => mod.FoodModule)},
   {path: 'basket', loadChildren: () => import('./basket/basket.module').then(mod => mod.BasketModule)},
+  {path: 'checkout', loadChildren: () => import('./checkout/checkout.module').then(mod => mod.CheckoutModule)},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
