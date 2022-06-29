@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'food', loadChildren: () => import('./food/food.module').then(mod => mod.FoodModule)},
   {path: 'basket', loadChildren: () => import('./basket/basket.module').then(mod => mod.BasketModule)},
   {path: 'checkout', loadChildren: () => import('./checkout/checkout.module').then(mod => mod.CheckoutModule)},
+  {path: 'account', loadChildren: () => import('./account/account.module').then(mod => mod.AccountModule)},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
